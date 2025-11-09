@@ -29,7 +29,7 @@
   - type: Body
     prototype: CEElf
     requiredLegs: 2
-#  - type: Bloodstream (until alchemy is ported.
+#  - type: Bloodstream (until alchemy is ported.)
 #    bloodReagent: CEBloodElf
 #  - type: CP14MagicEnergyContainer #Increased mana container
 #    maxEnergy: 200

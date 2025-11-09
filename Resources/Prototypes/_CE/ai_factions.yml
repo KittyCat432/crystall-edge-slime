@@ -7,4 +7,23 @@
   id: CEHostileEveryone
   hostile:
   - CEImperial
+  - CECats
+  - CEPests
+  - CENeutral
 
+- type: npcFaction
+  id: CECats
+  hostile:
+  - CEPests
+  - CEHostileEveryone
+
+- type: npcFaction
+  id: CEPests
+  hostile:
+  - CECats
+  - CEHostileEveryone
+
+- type: npcFaction
+  id: CENeutral
+  hostile:
+  - CEHostileEveryone
