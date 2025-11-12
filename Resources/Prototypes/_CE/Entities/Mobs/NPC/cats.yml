@@ -86,7 +86,7 @@
     interactFailureString: petting-failure-generic
     interactSuccessSpawn: EffectHearts
     interactSuccessSound:
-      path: /Audio/Pets/cat_meow.ogg
+      path: /Audio/Animals/cat_meow.ogg
   - type: PassiveDamage
     allowedStates:
     - Alive
