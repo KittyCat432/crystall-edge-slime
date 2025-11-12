@@ -1,0 +1,41 @@
+﻿- type: entity
+  name: snail timed spawner
+  id: CESpawnTimedMobSnail
+  parent: MarkerBase
+  categories: [ ForkFiltered ]
+  components:
+  - type: Sprite
+    layers:
+    - sprite: Markers/cross.rsi
+      state: blue
+    - sprite: _CE/Mobs/Animals/snail.rsi
+      state: live
+  - type: Timer
+  - type: TimedSpawner
+    prototypes:
+      - CEMobSnail
+    chance: 0.5
+    intervalSeconds: 540
+    minimumEntitiesSpawned: 1
+    maximumEntitiesSpawned: 2
+
+- type: entity
+  name: rat timed spawner
+  id: CESpawnTimedMobRat
+  parent: MarkerBase
+  categories: [ ForkFiltered ]
+  components:
+  - type: Sprite
+    layers:
+    - sprite: Markers/cross.rsi
+      state: blue
+    - sprite: _CE/Mobs/Pets/rat.rsi
+      state: rat
+  - type: Timer
+  - type: TimedSpawner
+    prototypes:
+    - CEMobRat
+    chance: 0.5
+    intervalSeconds: 900
+    minimumEntitiesSpawned: 1
+    maximumEntitiesSpawned: 2

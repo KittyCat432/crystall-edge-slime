@@ -8,7 +8,7 @@
   components:
   - type: NpcFactionMember
     factions:
-    - CECat
+    - CECats
   - type: HTN
     rootTask:
       task: SimpleHostileCompound
@@ -67,8 +67,8 @@
       collection: AlienClaw
     wideAnimation: WeaponArcClaw
   - type: GhostRole
-    name: ce-ghost-role-information-cat-name
-    description: ce-ghost-role-information-cat-description
+    name: ce-ghost-role-information-name-cat
+    description: ce-ghost-role-information-description-cat
     rules: ce-ghost-role-information-rules-pet
     raffle:
       settings: short
@@ -122,6 +122,9 @@
       Alive:
         Base: walking
         BaseUnshaded: walking-overlay
+      Critical:
+        Base: dead
+        BaseUnshaded: dead-overlay
       Dead:
         Base: dead
         BaseUnshaded: dead-overlay

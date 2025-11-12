@@ -1,0 +1,69 @@
+# animals
+
+- type: entity
+  name: snail spawner
+  id: CESpawnMobSnail
+  parent: MarkerBase
+  categories: [ ForkFiltered ]
+  components:
+  - type: Sprite
+    layers:
+    - sprite: Markers/cross.rsi
+      state: green
+    - sprite: _CE/Mobs/Animals/snail.rsi
+      state: live
+  - type: ConditionalSpawner
+    prototypes:
+    - CEMobSnail
+
+#pets
+
+- type: entity
+  name: rat spawner
+  id: CESpawnMobRat
+  parent: MarkerBase
+  categories: [ ForkFiltered ]
+  components:
+  - type: Sprite
+    layers:
+    - sprite: Markers/cross.rsi
+      state: green
+    - sprite: _CE/Mobs/Pets/rat.rsi
+      state: rat
+  - type: ConditionalSpawner
+    prototypes:
+    - CEMobRat
+
+- type: entity
+  name: cat spawner
+  id: CESpawnMobCatRandomColored
+  parent: MarkerBase
+  categories: [ ForkFiltered ]
+  suffix: "Colored"
+  components:
+  - type: Sprite
+    layers:
+    - sprite: Markers/cross.rsi
+      state: green
+    - sprite: _CE/Mobs/Pets/cat.rsi
+      state: lying
+  - type: ConditionalSpawner
+    prototypes:
+    - CEMobCatRandomColored
+
+- type: entity
+  name: cat spawner
+  id: CESpawnMobCatRandomColoredWithSpots
+  parent: MarkerBase
+  categories: [ ForkFiltered ]
+  suffix: "Colored, Spotted"
+  components:
+  - type: Sprite
+    layers:
+    - sprite: Markers/cross.rsi
+      state: green
+    - sprite: _CE/Mobs/Pets/cat.rsi
+      state: lying
+  - type: ConditionalSpawner
+    prototypes:
+    - CEMobCatRandomColoredWithSpots

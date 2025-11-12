@@ -14,8 +14,8 @@
   - type: NPCRetaliation
     attackMemoryLength: 20
   - type: GhostRole
-    name: ce-ghost-role-information-rat-name
-    description: ce-ghost-role-information-rat-description
+    name: ce-ghost-role-information-name-rat
+    description: ce-ghost-role-information-description-rat
     rules: ce-ghost-role-information-rules-pet
     raffle:
       settings: short
@@ -59,7 +59,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      35: Critical
+      30: Critical
       40: Dead
   - type: FireVisuals
     sprite: Mobs/Effects/onfire.rsi
