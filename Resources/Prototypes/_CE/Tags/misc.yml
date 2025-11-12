@@ -6,3 +6,9 @@
 
 - type: Tag
   id: CELockpick
+
+- type: Tag
+  id: CERat
+
+- type: Tag
+  id: CERatWearable
