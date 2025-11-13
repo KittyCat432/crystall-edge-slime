@@ -1,21 +1,3 @@
-# animals
-
-- type: entity
-  name: snail spawner
-  id: CESpawnMobSnail
-  parent: MarkerBase
-  categories: [ ForkFiltered ]
-  components:
-  - type: Sprite
-    layers:
-    - sprite: Markers/cross.rsi
-      state: green
-    - sprite: _CE/Mobs/Animals/snail.rsi
-      state: live
-  - type: ConditionalSpawner
-    prototypes:
-    - CEMobSnail
-
 #pets
 
 - type: entity
