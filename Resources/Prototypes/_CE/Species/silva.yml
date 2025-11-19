@@ -11,7 +11,7 @@
   maleFirstNames: CE_Names_Silva_Male_First
   femaleFirstNames: CE_Names_Silva_Female_First
   naming: First
-  minAge: 18
+  minAge: 18 #TODO: mention ages in the species guidebook entry
   maxAge: 500
   youngAge: 100
   oldAge: 300

@@ -11,7 +11,7 @@
   maleFirstNames: CE_Names_Carcat_First
   femaleFirstNames: CE_Names_Carcat_First
   naming: First
-  minAge: 18
+  minAge: 18 #TODO: mention ages in the species guidebook entry
   maxAge: 110
   youngAge: 20
   oldAge: 80
