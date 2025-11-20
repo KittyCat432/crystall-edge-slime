@@ -27,7 +27,7 @@
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
-          CEWoodenPlank1:
+          CEWoodenPlanks1:
             min: 3
             max: 5
           CEIronScrap1:
@@ -43,7 +43,3 @@
     node: CEWoodenChest
     containers:
     - entity_storage
-  - type: PhysicalComposition
-    materialComposition:
-      CEWood: 50
-      CEIron: 10

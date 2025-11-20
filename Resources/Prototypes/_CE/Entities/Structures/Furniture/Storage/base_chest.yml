@@ -1,8 +1,8 @@
 - type: entity
   parent: BaseStructureDynamic
   id: CEChestGeneric
-  categories: [ HideSpawnMenu, ForkFiltered ]
-  name: Chest
+  categories: [ ForkFiltered ]
+  name: chest
   description: Chest.
   abstract: true
   components:

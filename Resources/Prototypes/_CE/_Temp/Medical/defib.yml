@@ -17,7 +17,6 @@
       unequipDelay: 1
       sprite: _CE/Objects/Specific/Medical/healing_staff.rsi
       quickEquip: false
-      breakOnMove: false
       slots:
       - neck
     - type: Item

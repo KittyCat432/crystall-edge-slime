@@ -2,7 +2,7 @@
   id: CEPlastiseal
   name: ce-stack-pack-herbal-bandage
   icon: { sprite: "_CE/Objects/Specific/Medical/medical.rsi", state: herbbandage_3 }
-  spawn: CEHerbalBandage
+  spawn: CEPlastiseal
   maxCount: 5
 
 - type: stack
