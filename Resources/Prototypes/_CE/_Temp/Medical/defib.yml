@@ -9,9 +9,6 @@
       sprite: _CE/Objects/Specific/Medical/healing_staff.rsi
       layers:
         - state: icon
-          map: [ "enum.ToggleableVisuals.Layer" ]
-          visible: false
-          shader: unshaded
     - type: Clothing
       equipDelay: 1
       unequipDelay: 1

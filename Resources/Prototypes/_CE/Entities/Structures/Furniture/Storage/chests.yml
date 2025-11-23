@@ -10,7 +10,7 @@
     sprite: _CE/Structures/Storage/Crates/chest.rsi
     state: icon
   - type: Sprite
-    sprite: _CE/Structures/Storage/Crates/chest.rsi
+    sprite: _CE/Structures/Furniture/Storage/chest.rsi
     layers:
     - state: base
       map: ["enum.StorageVisualLayers.Base"]
