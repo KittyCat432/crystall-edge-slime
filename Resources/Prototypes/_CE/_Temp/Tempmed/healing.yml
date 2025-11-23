@@ -43,6 +43,8 @@
     - herbbandage
     - herbbandage_2
     - herbbandage_3
+  - type: StaticPrice
+    price: 50
 
 - type: entity
   id: CEPlastiseal1
@@ -144,7 +146,7 @@
     stackType: CEBloodpack
     count: 10
   - type: StackPrice
-    price: 10
+    price: 75
 
 - type: entity
   parent: CEBloodpack
