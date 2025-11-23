@@ -7,10 +7,10 @@
   description: A simple wooden chest for easy storage of junk.
   components:
   - type: Icon
-    sprite: _CE/Structures/Storage/Crates/chest.rsi
+    sprite: _CE/Structures/Furniture/Storage/Chests/chest.rsi
     state: icon
   - type: Sprite
-    sprite: _CE/Structures/Furniture/Storage/chest.rsi
+    sprite: _CE/Structures/Furniture/Storage/Chests/chest.rsi
     layers:
     - state: base
       map: ["enum.StorageVisualLayers.Base"]

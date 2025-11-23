@@ -75,7 +75,7 @@
   - type: Appearance
   - type: Construction
     graph: CEGauze
-    node: CEgauze
+    node: cegauze
   - type: Healing
     damageContainers:
       - CEBiological
@@ -98,6 +98,9 @@
     - bandage
     - bandage_2
     - bandage_3
+  - type: PhysicalComposition
+    materialComposition:
+      CECloth: 20
 
 - type: entity
   id: CEGauze1
@@ -145,8 +148,8 @@
   - type: Stack
     stackType: CEBloodpack
     count: 10
-  - type: StackPrice
-    price: 75
+  - type: StaticPrice
+    price: 80
 
 - type: entity
   parent: CEBloodpack

@@ -22,7 +22,7 @@
     count: 1
 
 - type: tradingPosition
-  id: CETradeContractApothecariesGuild
+  id: CETradeContractApothecariesGuildRoundstart
   priceMarkup: 20
   faction: Contracts
   service: !type:CEBuyItemsService
