@@ -10,7 +10,7 @@
   suffix: Apothecaries Guild
   components:
   - type: Sprite
-    state: house
+    state: apothecaries
   - type: CETradingContract
     faction: ApothecariesGuild
 
