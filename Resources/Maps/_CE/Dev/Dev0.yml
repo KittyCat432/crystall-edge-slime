@@ -4,8 +4,8 @@ meta:
   engineVersion: 267.3.0
   forkId: ""
   forkVersion: ""
-  time: 11/24/2025 20:20:30
-  entityCount: 864
+  time: 11/24/2025 21:47:14
+  entityCount: 857
 maps:
 - 1
 grids:
@@ -651,6 +651,11 @@ entities:
     components:
     - type: Transform
       pos: 0.5,-1.5
+      parent: 1
+  - uid: 250
+    components:
+    - type: Transform
+      pos: -8.5,-14.5
       parent: 1
   - uid: 314
     components:
@@ -1370,6 +1375,16 @@ entities:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -13.5,9.5
+      parent: 1
+  - uid: 541
+    components:
+    - type: Transform
+      pos: -7.5,-14.5
+      parent: 1
+  - uid: 542
+    components:
+    - type: Transform
+      pos: -6.5,-14.5
       parent: 1
   - uid: 545
     components:
@@ -2301,36 +2316,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: -1.5,-16.5
       parent: 1
-  - uid: 895
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -5.5,-13.5
-      parent: 1
-  - uid: 896
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -6.5,-13.5
-      parent: 1
-  - uid: 897
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -7.5,-13.5
-      parent: 1
-  - uid: 901
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -8.5,-14.5
-      parent: 1
-  - uid: 902
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -7.5,-14.5
-      parent: 1
   - uid: 903
     components:
     - type: Transform
@@ -2994,12 +2979,7 @@ entities:
     - type: Transform
       pos: -6.5,4.5
       parent: 1
-  - uid: 541
-    components:
-    - type: Transform
-      pos: -4.5,-13.5
-      parent: 1
-  - uid: 542
+  - uid: 550
     components:
     - type: Transform
       pos: -5.5,-13.5
@@ -3026,32 +3006,22 @@ entities:
     - type: Transform
       pos: -6.5,4.5
       parent: 1
-  - uid: 550
+  - uid: 543
     components:
     - type: Transform
-      pos: -4.5,-14.5
+      pos: -7.5,-13.5
       parent: 1
-  - uid: 551
+  - uid: 544
     components:
     - type: Transform
-      pos: -5.5,-14.5
-      parent: 1
-  - uid: 552
-    components:
-    - type: Transform
-      pos: -6.5,-14.5
+      pos: -6.5,-13.5
       parent: 1
   - uid: 553
     components:
     - type: Transform
-      pos: -8.5,-14.5
+      pos: -5.5,-13.5
       parent: 1
   - uid: 554
-    components:
-    - type: Transform
-      pos: -7.5,-14.5
-      parent: 1
-  - uid: 555
     components:
     - type: Transform
       pos: -8.5,-13.5
@@ -3101,13 +3071,6 @@ entities:
     components:
     - type: Transform
       pos: -8.5,-11.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 563
-    components:
-    - type: Transform
-      pos: -7.5,-11.5
       parent: 1
     - type: Fixtures
       fixtures: {}
@@ -3216,6 +3179,15 @@ entities:
       parent: 1
     - type: Fixtures
       fixtures: {}
+- proto: CEPipeBrassMediumValveOn
+  entities:
+  - uid: 552
+    components:
+    - type: Transform
+      pos: -7.5,-11.5
+      parent: 1
+    - type: Fixtures
+      fixtures: {}
 - proto: CEPipeBrassMediumVerticalUp
   entities:
   - uid: 738
@@ -3239,18 +3211,6 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -5.5,4.5
-      parent: 1
-  - uid: 543
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -5.5,-14.5
-      parent: 1
-  - uid: 544
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -4.5,-14.5
       parent: 1
 - proto: CEPlantAppleTree
   entities:
@@ -4124,11 +4084,6 @@ entities:
     - type: Transform
       pos: -8.5,-8.5
       parent: 1
-  - uid: 250
-    components:
-    - type: Transform
-      pos: -8.5,-12.5
-      parent: 1
   - uid: 256
     components:
     - type: Transform
@@ -4303,6 +4258,11 @@ entities:
     components:
     - type: Transform
       pos: -9.5,12.5
+      parent: 1
+  - uid: 551
+    components:
+    - type: Transform
+      pos: -8.5,-12.5
       parent: 1
   - uid: 751
     components:
