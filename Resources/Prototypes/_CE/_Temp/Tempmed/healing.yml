@@ -3,7 +3,7 @@
   parent: BaseItem
   name: plastiseal
   description: A bandage net woven from afar powerful enough to remove poison and cure burn wounds.
-  suffix: 5
+  suffix: 1
   categories: [ ForkFiltered ]
   components:
   - type: Item
@@ -37,7 +37,7 @@
       path: "/Audio/Items/Medical/brutepack_end.ogg"
   - type: Stack
     stackType: CEPlastiseal
-    count: 5
+    count: 1
     baseLayer: base
     layerStates:
     - herbbandage
@@ -47,21 +47,21 @@
     price: 50
 
 - type: entity
-  id: CEPlastiseal1
+  id: CEPlastiseal5
   parent: CEPlastiseal
-  suffix: 1
+  suffix: 5
   components:
   - type: Sprite
     state: herbbandage
   - type: Stack
-    count: 1
+    count: 5
 
 - type: entity
   id: CEGauze
   parent: BaseItem
   name: gauze
   description: Dense cloth gauze, to prevent valuable blood from leaking out of the body.
-  suffix: 5
+  suffix: 1
   categories: [ ForkFiltered ]
   components:
   - type: Item
@@ -92,7 +92,7 @@
       path: "/Audio/Items/Medical/brutepack_end.ogg"
   - type: Stack
     stackType: CEGauze
-    count: 5
+    count: 1
     baseLayer: base
     layerStates:
     - bandage
@@ -103,21 +103,21 @@
       CECloth: 20
 
 - type: entity
-  id: CEGauze1
+  id: CEGauze5
   parent: CEGauze
-  suffix: 1
+  suffix: 5
   components:
   - type: Sprite
     state: bandage
   - type: Stack
-    count: 1
+    count: 5
 
 - type: entity
   name: blood pack
   description: Contains magical blood that is definitely not from space.
   parent: BaseHealingItem
   id: CEBloodpack
-  suffix: Full
+  suffix: single
   categories: [ ForkFiltered ]
   components:
   - type: Item
@@ -147,15 +147,15 @@
         variation: 0.125
   - type: Stack
     stackType: CEBloodpack
-    count: 10
+    count: 1
   - type: StaticPrice
     price: 80
 
 - type: entity
   parent: CEBloodpack
-  id: CEBloodpack1
-  suffix: Single
+  id: CEBloodpack10
+  suffix: Full
   components:
   - type: Stack
     stackType: CEBloodpack
-    count: 1
+    count: 10

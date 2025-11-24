@@ -30,24 +30,24 @@
     count: 1
 
 - type: tradingPosition
-  id: CEGauze
+  id: CEGauze5
   faction: ApothecariesGuild
   service: !type:CEBuyItemsService
-    product: CEGauze
+    product: CEGauze5
     count: 1
 
 - type: tradingPosition
-  id: CEPlastiseal
+  id: CEPlastiseal5
   faction: ApothecariesGuild
   service: !type:CEBuyItemsService
-    product: CEPlastiseal
+    product: CEPlastiseal5
     count: 1
 
 - type: tradingPosition
-  id: CEBloodpack
+  id: CEBloodpack10
   faction: ApothecariesGuild
   service: !type:CEBuyItemsService
-    product: CEBloodpack
+    product: CEBloodpack10
     count: 1
 
 - type: tradingPosition
