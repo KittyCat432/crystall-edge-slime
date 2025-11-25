@@ -19,7 +19,7 @@
     - Alive
     damageCap: 20
     damage:
-      type:
+      types:
         Poison: -0.05
       groups:
         Brute: -0.07

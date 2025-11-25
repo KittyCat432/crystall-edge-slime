@@ -11,7 +11,7 @@
         doAfter: 3
 
   - node: cegauze
-    entity: CEGauze
+    entity: CEGauze1
 
 - type: construction
   hide: false

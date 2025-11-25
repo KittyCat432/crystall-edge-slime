@@ -102,7 +102,7 @@
   - type: PassiveDamage
     allowedStates:
     - Alive
-    damageCap: 20
+    damageCap: 40
     damage:
       groups:
         Burn: -0.2
