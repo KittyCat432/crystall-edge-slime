@@ -14,6 +14,9 @@ CEWallFrameStonebrick: CEWallFrameStoneBrick
 CEWallStonebrick: CEWallStoneBrick
 CEWallStonebrickOld: CEWallStoneBrickOld
 CEWallStonebrickBrown: CEWallStoneBrickBrown
+CEBushSpawner: null
+CEPlantSage: null
+CENail110: CENail10
 
 # CrystallEdge migration zone end
 
@@ -745,3 +748,6 @@ WarpPointBombing: null
 ToyGriffin: ToyFigurineGriffin
 ToyOwlman: ToyFigurineOwlman
 ToySkeleton: ToyFigurineSkeleton
+
+# 2025-10-28
+DrinkKiraSpecial: DrinkOrangeLimeSodaGlass
