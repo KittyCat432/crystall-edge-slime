@@ -1,3 +1,4 @@
+using Content.Shared._CE.MagicEnergy.Systems;
 using Content.Shared.Power;
 using Content.Shared.Power.Components;
 
@@ -10,9 +11,18 @@ public sealed partial class BatterySystem
         if (!Resolve(ent, ref ent.Comp))
             return 0;
 
+        //CrystallEdge overcharge energy
+        if (ent.Comp.CurrentCharge + amount > ent.Comp.MaxCharge)
+        {
+            var overcharge = (ent.Comp.CurrentCharge + amount) - ent.Comp.MaxCharge;
+            var overchargeEv = new CEEnergyOverchargeEvent(overcharge);
+            RaiseLocalEvent(ent, ref overchargeEv);
+        }
+        //CrystallEdge end
+
         var newValue = Math.Clamp(ent.Comp.CurrentCharge + amount, 0, ent.Comp.MaxCharge);
         var delta = newValue - ent.Comp.CurrentCharge;
-        ent.Comp.CurrentCharge = newValue;
+        ent.Comp.CurrentCharge = newValue; DirtyField(ent, nameof(BatteryComponent.CurrentCharge)); //CrystallEdge autonetworking
 
         TrySetChargeCooldown(ent.Owner);
 
@@ -44,7 +54,7 @@ public sealed partial class BatterySystem
             return;
 
         var oldCharge = ent.Comp.CurrentCharge;
-        ent.Comp.CurrentCharge = MathHelper.Clamp(value, 0, ent.Comp.MaxCharge);
+        ent.Comp.CurrentCharge = MathHelper.Clamp(value, 0, ent.Comp.MaxCharge); DirtyField(ent, nameof(BatteryComponent.CurrentCharge)); //CrystallEdge autonetworking
         if (MathHelper.CloseTo(ent.Comp.CurrentCharge, oldCharge) &&
             !(oldCharge != ent.Comp.CurrentCharge && ent.Comp.CurrentCharge == ent.Comp.MaxCharge))
         {
@@ -60,8 +70,8 @@ public sealed partial class BatterySystem
             return;
 
         var old = ent.Comp.MaxCharge;
-        ent.Comp.MaxCharge = Math.Max(value, 0);
-        ent.Comp.CurrentCharge = Math.Min(ent.Comp.CurrentCharge, ent.Comp.MaxCharge);
+        ent.Comp.MaxCharge = Math.Max(value, 0); DirtyField(ent, nameof(BatteryComponent.MaxCharge)); //CrystallEdge autonetworking
+        ent.Comp.CurrentCharge = Math.Min(ent.Comp.CurrentCharge, ent.Comp.MaxCharge); DirtyField(ent, nameof(BatteryComponent.CurrentCharge)); //CrystallEdge autonetworking
         if (MathHelper.CloseTo(ent.Comp.MaxCharge, old))
             return;
 

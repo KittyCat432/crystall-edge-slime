@@ -1,5 +1,4 @@
 using Content.Server.Power.Components;
-using Content.Shared._CE.MagicEnergy.Systems;
 using Content.Shared.Cargo;
 using Content.Shared.Examine;
 using Content.Shared.Power;
