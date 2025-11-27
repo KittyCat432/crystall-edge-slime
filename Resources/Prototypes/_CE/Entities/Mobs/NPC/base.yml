@@ -17,7 +17,7 @@
   components:
   - type: NpcFactionMember
     factions:
-    - CENeutrals
+    - CENeutral
   - type: MeleeWeapon
     angle: 0
     animation: WeaponArcBite

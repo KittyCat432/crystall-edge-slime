@@ -10,7 +10,7 @@
       task: RuminantHostileCompound
   - type: NpcFactionMember
     factions:
-    - CEPests
+    - CEPest
   - type: NPCRetaliation
     attackMemoryLength: 20
   - type: GhostRole

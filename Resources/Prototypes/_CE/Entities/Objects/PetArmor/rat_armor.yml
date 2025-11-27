@@ -2,7 +2,7 @@
   parent: CEClothingOuterClothingBase
   id: CERatArmor
   name: rat armor
-  description: A sturdy armor, suit for a noble rat squire
+  description: A sturdy armor suit, fit for a noble rat squire.
   components:
   - type: Sprite
     sprite: _CE/Clothing/PetArmor/rat_armor.rsi
@@ -23,7 +23,7 @@
   - type: ClothingSpeedModifier
     walkModifier: 0.9
     sprintModifier: 0.9
-#  - type: PhysicalComposition
-#    materialComposition:
-#      CEIron: 60
+  - type: PhysicalComposition
+    materialComposition:
+      CEIron: 60
 

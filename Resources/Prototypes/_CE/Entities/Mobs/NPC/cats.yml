@@ -8,7 +8,7 @@
   components:
   - type: NpcFactionMember
     factions:
-    - CECats
+    - CECat
   - type: HTN
     rootTask:
       task: SimpleHostileCompound
