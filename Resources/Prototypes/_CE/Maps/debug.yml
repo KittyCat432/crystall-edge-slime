@@ -34,16 +34,16 @@
           Nitrogen: 82.10312
     - type: SunShadowCycle
     - type: Parallax
-      parallax: Sky
+      parallax: CESky
     - type: LightCycle
-      originalColor: '#75BCFFFF'
+      originalColor: "#fff475"
     - type: SunShadow
     - type: MapLight
-      ambientLightColor: '#75BCFFFF'
+      ambientLightColor: "#efff75"
   minPlayers: 0
   stations:
     Dev:
-      stationProto: StandardNanotrasenStation
+      stationProto: CEStandardImperialFloatingIsland
       components:
         - type: StationNameSetup
           mapNameTemplate: "Dev"
@@ -63,4 +63,14 @@
               - id: CEKeyIronBlank
                 amount: 5
               - id: CEBaseLockpick
+                amount: 1
+            CEMedical: !type:AllSelector #Tempmed remove later
+              children:
+              - id: CEGauze
+                amount: 6
+              - id: CEPlastiseal
+                amount: 4
+              - id: CEBloodpack
+                amount: 2
+              - id: CEMagicDefib
                 amount: 1
