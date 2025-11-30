@@ -2,7 +2,7 @@
   id: CEMobRat
   parent: CESimpleMobBase
   name: rat
-  description: An adorable rat. You see valor in it's eyes fit for a squire.
+  description: An adorable rat. You see valor in its eyes fit for a squire.
   categories: [ ForkFiltered ]
   components:
   - type: HTN
