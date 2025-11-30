@@ -14,11 +14,12 @@
   - type: NPCRetaliation
     attackMemoryLength: 20
   - type: GhostRole
+    allowMovement: true
     name: ce-ghost-role-information-name-rat
     description: ce-ghost-role-information-description-rat
     rules: ce-ghost-role-information-rules-pet
-    raffle:
-      settings: short
+#    raffle:
+#      settings: short
   - type: GhostTakeoverAvailable
   - type: Sprite
     drawdepth: SmallMobs

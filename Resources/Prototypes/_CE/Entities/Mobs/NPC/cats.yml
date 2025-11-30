@@ -12,6 +12,13 @@
   - type: HTN
     rootTask:
       task: SimpleHostileCompound
+  - type: GhostRole
+    name: ce-ghost-role-information-name-cat
+    description: ce-ghost-role-information-description-cat
+    rules: ce-ghost-role-information-rules-pet
+#    raffle:
+#      settings: short
+  - type: GhostTakeoverAvailable
   - type: MovementSpeedModifier
     baseWalkSpeed: 3
     baseSprintSpeed: 5
@@ -66,13 +73,6 @@
     soundHit:
       collection: AlienClaw
     wideAnimation: WeaponArcClaw
-  - type: GhostRole
-    name: ce-ghost-role-information-name-cat
-    description: ce-ghost-role-information-description-cat
-    rules: ce-ghost-role-information-rules-pet
-    raffle:
-      settings: short
-  - type: GhostTakeoverAvailable
   - type: MessyDrinker
     spillChance: 0.2
   - type: Speech
@@ -103,31 +103,31 @@
     tags:
       - CannotSuicide
 
-- type: entity
-  parent: CEMobCatBase
-  id: CEMobCatColoredWithSpotsBase
-  categories: [ ForkFiltered ]
-  abstract: true
-  components:
-  - type: Sprite
-    drawdepth: Mobs
-    sprite: _CE/Mobs/Pets/cat.rsi
-    layers:
-    - map: ["enum.DamageStateVisualLayers.Base", "movement"]
-      state: walking
-    - map: [ "enum.DamageStateVisualLayers.BaseUnshaded", "overlay"]
-      state: walking-overlay
-  - type: DamageStateVisuals
-    states:
-      Alive:
-        Base: walking
-        BaseUnshaded: walking-overlay
-      Critical:
-        Base: dead
-        BaseUnshaded: dead-overlay
-      Dead:
-        Base: dead
-        BaseUnshaded: dead-overlay
+#- type: entity #TODO: when simple mobs are back readd this
+#  parent: CEMobCatBase
+#  id: CEMobCatColoredWithSpotsBase
+#  categories: [ ForkFiltered ]
+#  abstract: true
+#  components:
+#  - type: Sprite
+#    drawdepth: Mobs
+#    sprite: _CE/Mobs/Pets/cat.rsi
+#    layers:
+#    - map: ["enum.DamageStateVisualLayers.Base", "movement"]
+#      state: walking
+#    - map: [ "enum.DamageStateVisualLayers.BaseUnshaded", "overlay"]
+#      state: walking-overlay
+#  - type: DamageStateVisuals
+#    states:
+#      Alive:
+#        Base: walking
+#        BaseUnshaded: walking-overlay
+#      Critical:
+#        Base: dead
+#        BaseUnshaded: dead-overlay
+#      Dead:
+#        Base: dead
+#        BaseUnshaded: dead-overlay
 
 - type: entity
   parent: CEMobCatBase
@@ -140,15 +140,15 @@
     - enum.DamageStateVisualLayers.Base:
         walking: CECatColors
 
-- type: entity
-  parent: CEMobCatColoredWithSpotsBase
-  id: CEMobCatRandomColoredWithSpots
-  suffix: "Colored, Spotted"
-  categories: [ ForkFiltered ]
-  components:
-  - type: RandomSprite
-    available:
-    - enum.DamageStateVisualLayers.Base:
-        walking: CECatColors
-    - enum.DamageStateVisualLayers.BaseUnshaded:
-        walking-overlay: CECatColors
+#- type: entity
+#  parent: CEMobCatColoredWithSpotsBase
+#  id: CEMobCatRandomColoredWithSpots
+#  suffix: "Colored, Spotted"
+#  categories: [ ForkFiltered ]
+#  components:
+#  - type: RandomSprite
+#    available:
+#    - enum.DamageStateVisualLayers.Base:
+#        walking: CECatColors
+#    - enum.DamageStateVisualLayers.BaseUnshaded:
+#        walking-overlay: CECatColors

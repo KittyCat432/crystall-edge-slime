@@ -1,51 +1,45 @@
 #pets
-
+#TODO: once simple mobs are back turn these into conditional spawners again
 - type: entity
-  name: rat spawner
+  name: ghost role spawn point
+  suffix: rat
   id: CESpawnMobRat
   parent: MarkerBase
   categories: [ ForkFiltered ]
   components:
+  - type: GhostRole
+    name: ce-ghost-role-information-name-rat
+    description: ce-ghost-role-information-description-rat
+    rules: ce-ghost-role-information-rules-pet
+    raffle:
+      settings: short
+  - type: GhostRoleMobSpawner
+    prototype: CEMobRat
   - type: Sprite
     layers:
     - sprite: Markers/cross.rsi
       state: green
     - sprite: _CE/Mobs/Pets/rat.rsi
       state: rat
-  - type: ConditionalSpawner
-    prototypes:
-    - CEMobRat
 
 - type: entity
-  name: cat spawner
+  name: ghost role spawn point
   id: CESpawnMobCatRandomColored
   parent: MarkerBase
   categories: [ ForkFiltered ]
-  suffix: "Colored"
+  suffix: cat
   components:
+  - type: GhostRole
+    name: ce-ghost-role-information-name-cat
+    description: ce-ghost-role-information-description-cat
+    rules: ce-ghost-role-information-rules-pet
+    raffle:
+      settings: short
+  - type: GhostRoleMobSpawner
+    prototype: CEMobCatRandomColored
   - type: Sprite
     layers:
     - sprite: Markers/cross.rsi
       state: green
     - sprite: _CE/Mobs/Pets/cat.rsi
       state: lying
-  - type: ConditionalSpawner
-    prototypes:
-    - CEMobCatRandomColored
-
-- type: entity
-  name: cat spawner
-  id: CESpawnMobCatRandomColoredWithSpots
-  parent: MarkerBase
-  categories: [ ForkFiltered ]
-  suffix: "Colored, Spotted"
-  components:
-  - type: Sprite
-    layers:
-    - sprite: Markers/cross.rsi
-      state: green
-    - sprite: _CE/Mobs/Pets/cat.rsi
-      state: lying
-  - type: ConditionalSpawner
-    prototypes:
-    - CEMobCatRandomColoredWithSpots
