@@ -1,5 +1,3 @@
-using System.Numerics;
-using Content.Server.Administration.Logs;
 using Content.Server.Audio;
 using Content.Server.Materials;
 using Content.Server.Power.Components;
@@ -7,12 +5,10 @@ using Content.Server.Power.EntitySystems;
 using Content.Shared._CE.Recycler;
 using Content.Shared.Body.Components;
 using Content.Shared.Body.Systems;
-using Content.Shared.Destructible;
 using Content.Shared.Materials;
 using Content.Shared.Stacks;
 using Content.Shared.Whitelist;
 using Robust.Shared.Audio.Systems;
-using Robust.Shared.Map;
 using Robust.Shared.Physics.Events;
 
 namespace Content.Server._CE.Recycler;
@@ -25,9 +21,7 @@ public sealed class CERecyclerSystem : CESharedRecyclerSystem
     [Dependency] private readonly MaterialStorageSystem _material = default!;
     [Dependency] private readonly SharedAudioSystem _audio = default!;
     [Dependency] private readonly AmbientSoundSystem _ambient = default!;
-    [Dependency] private readonly SharedDestructibleSystem _destructible = default!;
     [Dependency] private readonly SharedTransformSystem _transform = default!;
-    [Dependency] private readonly IAdminLogManager _adminLog = default!;
 
     private EntityQuery<PowerConsumerComponent> _powerQuery;
 
@@ -94,7 +88,6 @@ public sealed class CERecyclerSystem : CESharedRecyclerSystem
             _material.EjectAllMaterial(ent.Owner, spawnPos, materialStorage);
         }
 
-        _destructible.DestroyEntity(other);
         _transform.SetCoordinates(other, spawnPos); //To prevent double reclaiming
     }
 }
