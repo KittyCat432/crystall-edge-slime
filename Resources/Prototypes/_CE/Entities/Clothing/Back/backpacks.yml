@@ -1,5 +1,3 @@
- # TODO: recolor with tags --- normal backpack T0 --- color backpack T0
-
 # ========================
 # Base
 # ========================
@@ -10,38 +8,30 @@
   id: CEClothingBackBackpackBase
   categories: [ ForkFiltered ]
 
+- type: entity
+  abstract: true
+  parent: CEClothingBackContainerBase
+  id: CEClothingBackSatchelBase
+  categories: [ ForkFiltered ]
+  components:
+  - type: Foldable
+    canFoldInsideContainer: true
+    unfoldVerbText: fold-flip-verb
+    foldVerbText: fold-flip-verb
+  - type: FoldableClothing
+    foldedEquippedPrefix: flipped
+    foldedHeldPrefix: flipped
+  - type: Sprite
+    sprite: _CE/Clothing/Back/Satchel/satchel_t0.rsi
+
 # ========================
-# Tiers
+# Bags
 # ========================
 
 - type: entity
   parent: CEClothingBackBackpackBase
-  id: CEClothingBackBackpackT0
-  name: Sack
-  suffix: backpack T0
-  description: A simple cloth sack with basic storage capacity. Lightweight but not very secure.
-  components:
-  - type: Clothing
-    slots:
-    - back
-    - belt
-    equipDelay: 0.8
-    unequipDelay: 0.3
-  - type: Sprite
-    sprite: _CE/Clothing/Back/Backpacks/backpack_t0.rsi
-  - type: Storage
-    grid: # 15
-    - 0,0,4,2 # 5*3=15
-  - type: PhysicalComposition
-    materialComposition:
-      CECloth: 60 # 50u CECloth (10x10u) + 10u CEString
-      # Cost: (60×0.3) = 18 copper coins
-
-- type: entity
-  parent: CEClothingBackBackpackT0
-  id: CEClothingBackBackpackT1
+  id: CEClothingBackBackpack
   name: Backpack
-  suffix: backpack T1
   description: A standard backpack with decent storage space. Perfect for everyday use. It covers your back from blows!
   components:
   - type: Clothing
@@ -66,3 +56,29 @@
         Caustic: 0.90
   - type: ExplosionResistance
     damageCoefficient: 0.9
+
+- type: entity
+  parent: CEClothingBackSatchelBase
+  id: CEClothingBackSatchel
+  name: Rustic Satchel
+  description: A handcrafted leather satchel with rustic charm. Provides modest storage with traditional styling. Can be worn on the over the shoulder.
+  components:
+  - type: Clothing
+    slots:
+    - back
+  - type: Sprite
+    sprite: _CE/Clothing/Back/Satchel/satchel_t1.rsi
+  - type: Storage
+    grid: # 32
+    - 0,1,1,3 # 2x3=6
+    - 3,0,3,3 # 1x4=4
+    - 5,0,7,3 # 3x4=12
+    - 9,0,9,3 # 1x4=4
+    - 11,1,12,3 # 2x3=6
+  - type: PhysicalComposition
+    materialComposition:
+      CELeather: 15 # 15u CELeather (3x5u)
+      CEIron: 6 # 6u CEIronBuckle (3x2u)
+      CECloth: 50 # 40u CECloth (8x10u) + 10u CEString ~~~ 15 additional coppers
+      # Cost: (15×1.2) + (6×2) = 18 + 12 = 30 copper coins
+

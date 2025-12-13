@@ -18,6 +18,7 @@
   equipment:
     keys: CEKeyRingInvestigator
     belt: CEWalletFilledInvestigator
+    belt2: CEGunJustice
 
 
 - type: entity
