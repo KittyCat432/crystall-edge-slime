@@ -99,4 +99,17 @@
   priceMarkup: 10
   service: !type:CEBuyItemsService
     product: CERatArmor
+
+- type: tradingPosition
+  id: CEGunJustice
+  faction: EmpireGuard
+  service: !type:CEBuyItemsService
+    product: CEGunJustice
+    count: 1
+
+- type: tradingPosition
+  id: CEGunPeacekeeper
+  faction: EmpireGuard
+  service: !type:CEBuyItemsService
+    product: CEGunPeacekeeper
     count: 1
