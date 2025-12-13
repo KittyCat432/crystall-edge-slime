@@ -2,7 +2,7 @@
 enabled = true
 
 [loc]
-server_language = "ru-RU"
+server_language = "en-US"
 
 [log]
 path = "logs"
