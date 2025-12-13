@@ -1,0 +1,68 @@
+ # TODO: recolor with tags --- normal backpack T0 --- color backpack T0
+
+# ========================
+# Base
+# ========================
+
+- type: entity
+  abstract: true
+  parent: CEClothingBackContainerBase
+  id: CEClothingBackBackpackBase
+  categories: [ ForkFiltered ]
+
+# ========================
+# Tiers
+# ========================
+
+- type: entity
+  parent: CEClothingBackBackpackBase
+  id: CEClothingBackBackpackT0
+  name: Sack
+  suffix: backpack T0
+  description: A simple cloth sack with basic storage capacity. Lightweight but not very secure.
+  components:
+  - type: Clothing
+    slots:
+    - back
+    - belt
+    equipDelay: 0.8
+    unequipDelay: 0.3
+  - type: Sprite
+    sprite: _CE/Clothing/Back/Backpacks/backpack_t0.rsi
+  - type: Storage
+    grid: # 15
+    - 0,0,4,2 # 5*3=15
+  - type: PhysicalComposition
+    materialComposition:
+      CECloth: 60 # 50u CECloth (10x10u) + 10u CEString
+      # Cost: (60×0.3) = 18 copper coins
+
+- type: entity
+  parent: CEClothingBackBackpackT0
+  id: CEClothingBackBackpackT1
+  name: Backpack
+  suffix: backpack T1
+  description: A standard backpack with decent storage space. Perfect for everyday use. It covers your back from blows!
+  components:
+  - type: Clothing
+    slots:
+    - back
+  - type: Sprite
+    sprite: _CE/Clothing/Back/Backpacks/backpack_t1.rsi
+  - type: Storage
+    grid: # 24
+    - 0,0,5,3 # 6*4=24
+  - type: PhysicalComposition
+    materialComposition:
+      CELeather: 18 # 20u CELeather (4x5u) ~~~ and -2u for cost balance
+      CEIron: 2 # 2u CEIronBuckle (1x2u)
+      # Cost: (20×1.2) + (2×2) = 24 + 4 = 28 copper coins
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.95
+        Slash: 0.95
+        Heat: 0.90
+        Caustic: 0.90
+  - type: ExplosionResistance
+    damageCoefficient: 0.9
